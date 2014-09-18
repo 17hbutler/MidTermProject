@@ -4,7 +4,8 @@ public class GolfStats
 
 	public static void main(String[] args) 
 	{
-		InputScores.intputPlayers(); 
+		InputScores.inputPlayers();
+	
 	}
 
 }
