@@ -9,6 +9,11 @@ public class Player
 	double greensInReg;
 	double puttsPerHole; 
 	
+	public Player() 
+	{
+		this()
+	}
+	
 	public Player(String pN, double sA, double dA, double dD, double gR, double pH) 
 	{
 		playerName = pN; 
@@ -51,4 +56,17 @@ public class Player
 		return puttsPerHole;
 	}
 
+
+	@Override
+	public String toString() 
+	{
+		return "Player [playerName=" + playerName + ", scoringAverage="
+				+ scoringAverage + ", drivingAccuracy=" + drivingAccuracy
+				+ ", drivingDistance=" + drivingDistance + ", greensInReg="
+				+ greensInReg + ", puttsPerHole=" + puttsPerHole + "]";
+	}
+
+
+	
+	
 }
