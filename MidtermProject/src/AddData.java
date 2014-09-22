@@ -13,7 +13,7 @@ public class AddData
 		
 		for(Player p:data) 
 		{
-			print(p.get)
+			print(p.getPlayer.playerName);
 		}
 	}
 }
