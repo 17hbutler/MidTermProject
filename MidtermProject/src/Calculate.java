@@ -1,4 +1,5 @@
 
-public class Calculate {
+public class Calculate 
+{
 
 }

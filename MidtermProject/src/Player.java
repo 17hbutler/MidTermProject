@@ -8,15 +8,11 @@ public class Player
 	double drivingDistance; 
 	double greensInReg;
 	double puttsPerHole; 
-	
-	public Player() 
-	{
-		this()
-	}
+	boolean wantsToContinue; 
 	
 	public Player(String pN, double sA, double dA, double dD, double gR, double pH) 
 	{
-		playerName = pN; 
+		playerName = pN;
 		scoringAverage = sA; 
 		drivingAccuracy = dA; 
 		drivingDistance = dD;
@@ -25,7 +21,15 @@ public class Player
 		
 	}
 	
-
+	public static void inputNewData() 
+	{
+		boolean wantsToContinue = true; 
+		while(wantsToContinue) 
+		{
+			
+		}
+	}
+	
 	public String getPlayerName() 
 	{
 		return playerName;
@@ -56,14 +60,43 @@ public class Player
 		return puttsPerHole;
 	}
 
+	public void setPlayerName(String playerName) 
+	{
+		this.playerName = playerName;
+	}
+
+	public void setScoringAverage(double scoringAverage) 
+	{
+		this.scoringAverage = scoringAverage;
+	}
+
+	public void setDrivingAccuracy(double drivingAccuracy) 
+	{
+		this.drivingAccuracy = drivingAccuracy;
+	}
+
+	public void setDrivingDistance(double drivingDistance) 
+	{
+		this.drivingDistance = drivingDistance;
+	}
+
+	public void setGreensInReg(double greensInReg) 
+	{
+		this.greensInReg = greensInReg;
+	}
+	
+	public void setPuttsPerHole(double puttsPerHole) 
+	{
+		this.puttsPerHole = puttsPerHole;
+	}
+
+
+
 
 	@Override
 	public String toString() 
 	{
-		return "Player [playerName=" + playerName + ", scoringAverage="
-				+ scoringAverage + ", drivingAccuracy=" + drivingAccuracy
-				+ ", drivingDistance=" + drivingDistance + ", greensInReg="
-				+ greensInReg + ", puttsPerHole=" + puttsPerHole + "]";
+		return "Name \t" + playerName + "\n" + "Scoring Average \t" + scoringAverage + "\n" + "Drving Accuracy \t" + drivingAccuracy + "\n" + "Driving Distance \t" + drivingDistance + "\n" + "Greens in regulation \t" + greensInReg + "\n" + "Putts per hole \t\t\t\t" + puttsPerHole + "\n"; 
 	}
 
 
