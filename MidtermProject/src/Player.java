@@ -2,13 +2,14 @@ import java.util.Scanner;
 import java.util.ArrayList; 
 public class Player 
 {	
-	String playerName; 
+	static String playerName; 
 	double scoringAverage; 
 	double drivingAccuracy; 
 	double drivingDistance; 
 	double greensInReg;
 	double puttsPerHole; 
-	boolean wantsToContinue; 
+	
+	
 	
 	public Player(String pN, double sA, double dA, double dD, double gR, double pH) 
 	{
@@ -21,14 +22,7 @@ public class Player
 		
 	}
 	
-	public static void inputNewData() 
-	{
-		boolean wantsToContinue = true; 
-		while(wantsToContinue) 
-		{
-			
-		}
-	}
+
 	
 	public String getPlayerName() 
 	{
@@ -96,7 +90,7 @@ public class Player
 	@Override
 	public String toString() 
 	{
-		return "Name \t" + playerName + "\n" + "Scoring Average \t" + scoringAverage + "\n" + "Drving Accuracy \t" + drivingAccuracy + "\n" + "Driving Distance \t" + drivingDistance + "\n" + "Greens in regulation \t" + greensInReg + "\n" + "Putts per hole \t\t\t\t" + puttsPerHole + "\n"; 
+		return "Name \t" + playerName + "\n" + "Scoring Average \t" + scoringAverage + "\n" + "Drving Accuracy \t" + drivingAccuracy + "\n" + "Driving Distance \t" + drivingDistance + "\n" + "Greens in regulation \t" + greensInReg + "\n" + "Putts per hole \t\t" + puttsPerHole + "\n"; 
 	}
 
 
